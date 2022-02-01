@@ -1,4 +1,4 @@
-# IA-GA
+# ALgoritmo Genético
 
 > Trabalho desenvolvido na disciplina de Inteligência Artificial
 >
