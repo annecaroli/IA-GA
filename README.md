@@ -1,6 +1,12 @@
 # IA-GA
-Trabalho desenvolvido na disciplina de Inteligência Artificial
-----
+
+> Trabalho desenvolvido na disciplina de Inteligência Artificial
+>
+> Professor Eduardo Max
+> 
+> Alunas: Anne e Mellyssa
+> 
+> Ifes - Campus Serra
 
 # 1 Introdução
 
