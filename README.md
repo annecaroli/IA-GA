@@ -5,6 +5,7 @@ Trabalho desenvolvido na disciplina de Inteligência Artificial
 # 1 Introdução
 
 1. O que são AG?
+
 Os algoritmos genéticos utilizam conceitos provenientes do princípio de seleção natural para abordar uma série ampla de problemas, em especial de otimização. Inspirado na maneira como o darwinismo explica o processo de evolução das espécies, John Holland decompôs o funcionamento dos AGs nas etapas de inicialização, avaliação, seleção, cruzamento, mutação, atualização e finalização.
 
 * Avaliação: avalia-se a aptidãoo das soluções (indivíduos da população);
@@ -61,15 +62,42 @@ Cada gene do indivíduo receberá como valor um elemento do conjunto binário [0
 
 2. Decodificação do cromossomo
 
-Antes de passar pela avaliação, o cromossomo deve passar por uma etapa de decodificação. Nesta etapa, é realizado um cálculo para converter seu valor binário para seu número real equivalente e em seguida, o 
+Antes de passar pela avaliação, o cromossomo deve passar por uma etapa de decodificação. Nesta etapa, é realizado um cálculo para converter seu valor binário para seu número real equivalente.
 
-3. Avaliação
+![image](https://user-images.githubusercontent.com/9114468/151906508-eea9ddc5-8e07-4ca7-8aa5-d4802f5b7a29.png)
+
+3. Função objetivo
+
+Em seguida, o valor real é normalizado para estar no dentro do domínio proposto nos requisitos.
+
+![image](https://user-images.githubusercontent.com/9114468/151906633-469463f7-46ac-43d3-9a80-8e0de2dce52b.png)
+
+
+4. Avaliação
 
 Cada indivíduo da população é avaliado para que seja determinado o seu grau de adaptação
 
 ![image](https://user-images.githubusercontent.com/9114468/151906068-ce097d6e-5ba6-4587-a5a6-191fd70f4c6d.png)
 
-Para o problema vigente, a seguinte
+5. Seleção
+
+A seleção é a responsável pela perpetuação de boas características na espécie. Para o problema vigente, a seleção é realizada através de torneio, os se escolhem dois indivíduos aleatoriamente e o mais adaptado é selecionado.
+
+![image](https://user-images.githubusercontent.com/9114468/151906935-54c5ef43-771b-4a47-9a24-c71bf442480c.png)
+
+6. Crossover
+
+O crossover tem como objetivo propagar os esquemas mais adequados na população e para isso foi determinado que fosse realizado através de um ponto de corte, a ser escolhido aleatoriamente.
+
+![image](https://user-images.githubusercontent.com/9114468/151907067-e7505d83-9130-4f08-be54-ade54273a1cb.png)
+
+
+7. Mutação
+
+A mutação opera sobre os indivíduos resultantes do processo de cruzamento e com uma probabilidade pré-determinada em 1% efetua algum tipo de alteração em sua estrutura
+
+![image](https://user-images.githubusercontent.com/9114468/151907140-be307e1b-695c-4e49-bdcf-5280624a3d0b.png)
+
 
 # 5 Resultados
 
