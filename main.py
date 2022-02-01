@@ -87,13 +87,13 @@ def genetic_algorithm(bounds, n_bits, n_iteration, n_population, crossover_rate,
     for gen in range(n_iteration):
         # realiza avaliação da população inicial
         parents = evaluate_population(bounds, n_bits, init_population)
-        print(parents)
+        # print(parents)
 
         # procura pela melhor solução, minimo da função
         for i in range(len(parents)):
             if parents[i][1] < best_eval:
                 best, best_eval = parents[i][0], parents[i][1]
-                print("Best ", best_eval)
+                # print("Best ", best_eval)
 
         # seleciona os individuos mais aptos atraves de seleção por torneio
         selected = tournament_selection(parents)
